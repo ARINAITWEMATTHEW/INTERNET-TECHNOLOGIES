@@ -1,0 +1,339 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Practice - SCS2205</title>
+    <style>
+      body {
+        margin: 0;
+        background-color: #ffdbbb;
+        color: #664930;
+        font-family: Arial, sans-serif;
+      }
+
+      .page {
+        max-width: 720px;
+        margin: 0 auto;
+        padding: 24px 16px;
+      }
+
+      h1 {
+        text-align: center;
+        font-size: 26px;
+        color: #664930;
+        margin: 0 0 6px;
+      }
+
+      .back-link {
+        display: block;
+        text-align: center;
+        margin-bottom: 16px;
+        color: #997e67;
+        font-size: 13px;
+        text-decoration: none;
+      }
+
+      .back-link:hover {
+        text-decoration: underline;
+      }
+
+      hr {
+        border: none;
+        border-top: 2px solid #997e67;
+        margin: 20px 0;
+      }
+
+      h2 {
+        font-size: 17px;
+        color: #664930;
+        margin: 0 0 10px;
+        border-left: 4px solid #997e67;
+        padding-left: 10px;
+      }
+
+      h3 {
+        font-size: 14px;
+        color: #664930;
+        margin: 14px 0 6px;
+      }
+
+      p {
+        font-size: 14px;
+        margin: 6px 0;
+      }
+
+      /* ── Tables ── */
+      table {
+        border-collapse: collapse;
+        font-size: 13px;
+        margin-bottom: 10px;
+      }
+
+      table th,
+      table td {
+        border: 1px solid #997e67;
+        padding: 7px 12px;
+        color: #664930;
+        text-align: center;
+      }
+
+      table th {
+        background-color: #664930;
+        color: #ffdbbb;
+        font-weight: bold;
+      }
+
+      table tr:nth-child(even) td {
+        background-color: #ccbeb1;
+      }
+
+      table tr:nth-child(odd) td {
+        background-color: #fff9f4;
+      }
+
+      /* vertical text cells */
+      .vert {
+        writing-mode: vertical-rl;
+        text-orientation: mixed;
+        white-space: nowrap;
+        letter-spacing: 2px;
+        font-weight: bold;
+        color: #664930;
+        background: #edd8c6 !important;
+      }
+
+      .section {
+        margin-bottom: 28px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="page">
+      <h1>HTML Practice Exercises</h1>
+      <a class="back-link" href="index.html">&larr; Back to My Profile</a>
+      <hr />
+
+      <!-- ══ SECTION 1: Text formatting ══ -->
+      <div class="section">
+        <h2>1. Superscripts &amp; Subscripts</h2>
+
+        <p>a<sup>2</sup> + b<sup>2</sup> = c<sup>2</sup></p>
+
+        <p>log<sub>b</sub>a = log<sub>c</sub>a / log<sub>c</sub>b</p>
+
+        <p>
+          This text contains sensitive information which may be deciphered by
+          <del>NASA</del><ins>no one</ins>.
+        </p>
+      </div>
+
+      <hr />
+
+      <!-- ══ TABLE 1 ══ -->
+      <div class="section">
+        <h2>Table 1 — Basic timetable (no rowspan)</h2>
+
+        <table>
+          <thead>
+            <tr>
+              <th>Monday</th>
+              <th>Tuesday</th>
+              <th>Wednesday</th>
+              <th>Thursday</th>
+              <th>Friday</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>SCS101</td>
+              <td>SCS104</td>
+              <td></td>
+              <td>SCS105</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>SCS104</td>
+              <td></td>
+              <td>SCS105</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>SCS101</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>SCS101</td>
+              <td>SCS102</td>
+              <td></td>
+              <td>SCS102</td>
+              <td></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <hr />
+
+      <!-- ══ TABLE 2 ══ -->
+      <div class="section">
+        <h2>Table 2 — Same timetable (identical layout, second instance)</h2>
+
+        <table>
+          <thead>
+            <tr>
+              <th>Monday</th>
+              <th>Tuesday</th>
+              <th>Wednesday</th>
+              <th>Thursday</th>
+              <th>Friday</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>SCS101</td>
+              <td>SCS104</td>
+              <td></td>
+              <td>SCS105</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>SCS104</td>
+              <td></td>
+              <td>SCS105</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>SCS101</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>SCS101</td>
+              <td>SCS102</td>
+              <td></td>
+              <td>SCS102</td>
+              <td></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <hr />
+
+      <!-- ══ TABLE 3 — with nested list in a cell ══ -->
+      <div class="section">
+        <h2>Table 3 — Timetable with a list inside a cell</h2>
+
+        <table>
+          <thead>
+            <tr>
+              <th>Monday</th>
+              <th>Tuesday</th>
+              <th>Wednesday</th>
+              <th>Thursday</th>
+              <th>Friday</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>SCS101</td>
+              <td>SCS104</td>
+              <td></td>
+              <td>SCS105</td>
+              <td>
+                <ol>
+                  <li>Eat</li>
+                </ol>
+              </td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>SCS104</td>
+              <td>
+                <ol start="2">
+                  <li>Sleep</li>
+                </ol>
+              </td>
+              <td>SCS105</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>SCS101</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>SCS101</td>
+              <td>SCS102</td>
+              <td></td>
+              <td>SCS102</td>
+              <td></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <hr />
+
+      <!-- ══ TABLE 4 — with BREAK and LUNCH as vertical rowspan cells ══ -->
+      <div class="section">
+        <h2>
+          Table 4 — Timetable with BREAK and LUNCH (rowspan + vertical text)
+        </h2>
+
+        <table>
+          <thead>
+            <tr>
+              <th>Monday</th>
+              <th>Tuesday</th>
+              <th>Wednesday</th>
+              <th>Thursday</th>
+              <th>Friday</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>SCS101</td>
+              <td>SCS104</td>
+              <td rowspan="2" class="vert">B R E A K</td>
+              <td>SCS105</td>
+              <td rowspan="2" class="vert">L U N C H</td>
+            </tr>
+            <tr>
+              <td>SCS111</td>
+              <td>SCS104</td>
+              <!-- Wednesday cell covered by rowspan -->
+              <td>SCS105</td>
+              <!-- Friday cell covered by rowspan -->
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td>SCS102</td>
+              <td></td>
+              <td></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <hr />
+
+      <p style="text-align: center; font-size: 11px; color: #997e67">
+        &copy; 2026 Arinaitwe Matthew &mdash; SCS2205 Internet Technologies,
+        Kyambogo University
+      </p>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,286 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Profile - SCS2205</title>
+    <style>
+      body {
+        margin: 0;
+        background-color: #ffdbbb;
+        color: #664930;
+        font-family: Arial, sans-serif;
+      }
+
+      .page {
+        max-width: 660px;
+        margin: 0 auto;
+        padding: 24px 16px;
+      }
+
+      h1 {
+        text-align: center;
+        font-size: 28px;
+        color: #664930;
+        margin: 0 0 16px;
+      }
+
+      hr {
+        border: none;
+        border-top: 2px solid #997e67;
+        margin: 20px 0;
+      }
+
+      .section-title {
+        text-align: center;
+        font-size: 18px;
+        font-weight: bold;
+        color: #664930;
+        margin: 0 0 14px;
+      }
+
+      .profile-row {
+        display: flex;
+        gap: 20px;
+        align-items: flex-start;
+      }
+
+      .profile-row img {
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+        border: 3px solid #997e67;
+        object-fit: cover;
+        flex-shrink: 0;
+      }
+
+      .info-block {
+        font-size: 14px;
+        line-height: 1.9;
+        color: #664930;
+      }
+
+      .info-block .name {
+        font-size: 22px;
+        font-weight: bold;
+        margin-bottom: 6px;
+      }
+
+      /* ─ Education table ─ */
+      table.edu {
+        width: 100%;
+        border-collapse: collapse;
+        font-size: 13px;
+      }
+
+      table.edu th {
+        background: #664930;
+        color: #ffdbbb;
+        padding: 8px 10px;
+        text-align: left;
+      }
+
+      table.edu td {
+        padding: 8px 10px;
+        border: 1px solid #ccbeb1;
+        color: #664930;
+      }
+
+      table.edu tr:nth-child(even) td {
+        background: #ccbeb1;
+      }
+
+      table.edu tr:nth-child(odd) td {
+        background: #fff9f4;
+      }
+
+      /* ─ Hobbies ─*/
+      ul.hobbies {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+      }
+
+      ul.hobbies li {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        font-size: 14px;
+        color: #664930;
+      }
+
+      ul.hobbies img {
+        width: 22px;
+        height: 22px;
+        object-fit: contain;
+      }
+
+      /* ─ Social links ─ */
+      .social-row {
+        display: flex;
+        justify-content: center;
+        gap: 28px;
+        flex-wrap: wrap;
+      }
+
+      .social-row a {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 6px;
+        text-decoration: none;
+        color: #664930;
+        font-size: 13px;
+      }
+
+      .social-row a img {
+        width: 45px;
+        height: 45px;
+        border-radius: 8px;
+      }
+
+      .social-row a:hover {
+        opacity: 0.8;
+      }
+
+      footer {
+        text-align: center;
+        font-size: 11px;
+        color: #997e67;
+        margin-top: 8px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="page">
+      <h1>My Profile</h1>
+      <hr />
+
+      <!-- Profile photo + basic info -->
+      <div class="profile-row">
+        <img src="image/photo.jpg" alt="Profile Photo" />
+
+        <div class="info-block">
+          <div class="name">ARINAITWE MATTHEW</div>
+          <div><b>Reg No &nbsp;:</b> 24/U/ITE/03459/PE</div>
+          <div><b>Course &nbsp;:</b> BITC</div>
+          <div><b>Year &nbsp;&nbsp;&nbsp;:</b> Year 2, Semester 2</div>
+          <div><b>Email &nbsp;&nbsp;:</b> 2400803459.email@std.kyu.ac.ug</div>
+          <div><b>University:</b> Kyambogo University</div>
+        </div>
+      </div>
+
+      <hr />
+
+      <!-- Education -->
+      <p class="section-title">Education Background</p>
+
+      <table class="edu">
+        <thead>
+          <tr>
+            <th>Year</th>
+            <th>School / Institution</th>
+            <th>Award</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>2024 &ndash; Present</td>
+            <td>Kyambogo University</td>
+            <td>BITC (In Progress)</td>
+          </tr>
+          <tr>
+            <td>2022 &ndash; 2023</td>
+            <td>CSS</td>
+            <td>Uganda Advanced Certificate of Education (UACE)</td>
+          </tr>
+          <tr>
+            <td>2017 &ndash; 2021</td>
+            <td>Ntare School</td>
+            <td>Uganda Certificate of Education (UCE)</td>
+          </tr>
+          <tr>
+            <td>2013 &ndash; 2016</td>
+            <td>Mbarara Municipal School</td>
+            <td>Primary Leaving Examination (PLE)</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <hr />
+
+      <!-- Hobbies -->
+      <p class="section-title">Hobbies &amp; Interests</p>
+
+      <ul class="hobbies">
+        <li>
+          <img src="image/cod.png" alt="Gaming" />
+          <span>Gaming &mdash; Call of Duty</span>
+        </li>
+        <li>
+          <img src="image/spotify.png" alt="Spotify" />
+          <span>Music &mdash; Spotify</span>
+        </li>
+        <li>
+          <img src="image/netflix.png" alt="Netflix" />
+          <span>Movies &amp; Series</span>
+        </li>
+        <li>
+          <span style="font-size: 18px">🔴</span>
+          <span>Hating Arsenal (full-time job)</span>
+        </li>
+        <li>
+          <img src="image/vscode.png" alt="VS Code" />
+          <span>Coding</span>
+        </li>
+        <li>
+          <span style="font-size: 18px">⚽</span>
+          <span>Football &mdash; Barcelona only, don&rsquo;t ask</span>
+        </li>
+      </ul>
+
+      <hr />
+
+      <!-- Social links -->
+      <p class="section-title">Find Me On</p>
+
+      <div class="social-row">
+        <a href="https://instagram.com/" target="_blank">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/600px-Instagram_icon.png"
+            alt="Instagram"
+          />
+          Instagram
+        </a>
+
+        <a href="https://wa.me/256727375658" target="_blank">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/WhatsApp.svg/600px-WhatsApp.svg.png"
+            alt="WhatsApp"
+          />
+          WhatsApp
+        </a>
+
+        <a href="https://x.com/arinaitwematthew" target="_blank">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/X_icon_2.svg/600px-X_icon_2.svg.png"
+            alt="X"
+          />
+          X
+        </a>
+      </div>
+
+      <hr />
+
+      <footer>
+        &copy; 2026 Arinaitwe Matthew &mdash; SCS2205 Internet Technologies,
+        Kyambogo University
+      </footer>
+    </div>
+  </body>
+</html>
